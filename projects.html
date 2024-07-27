@@ -72,8 +72,12 @@
     </style>
 </head>
 <body>
+
     <div class="sidebar">
-        <img src="path-to-your-image.jpg" alt="Your Image">
+        <div class="image-container">
+            <img src="PassportImage.jpeg" alt="Your Image">
+        </div>
+      
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
         <a href="profile.html">Profile</a>
@@ -81,8 +85,28 @@
 
     <div class="main-content">
         <section id="projects">
-            <h1>Projects</h1>
-            <p>This is the projects section.</p>
+
+          <h1>Projects</h1>
+
+          <div class="project-tabs">
+            <button class="tab-button active" data-tab="nbc">NBC</button>
+            <button class="tab-button" data-tab="conversational-bi">Conversational BI using LLM</button>
+            <button class="tab-button" data-tab="cloud-deployed-app">Cloud Deployed App</button>
+            <button class="tab-button" data-tab="transfer-learning">Transfer Learning</button>
+            <button class="tab-button" data-tab="rag-with-llms">RAG with LLMs</button>
+          </div>
+
+          <div id="nbc" class="project-content">
+            </div>
+          <div id="conversational-bi" class="project-content">
+            </div>
+          <div id="cloud-deployed-app" class="project-content">
+            </div>
+          <div id="transfer-learning" class="project-content">
+            </div>
+          <div id="rag-with-llms" class="project-content">
+            </div>
+            
         </section>
     </div>
 
